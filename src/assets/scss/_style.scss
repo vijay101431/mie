@@ -1,0 +1,130 @@
+// Offers
+
+.offers
+{
+    height: 25px;
+    background-color: var(--primary);
+    display: none;
+}
+// Header
+.header {
+    display: flex;
+    height: 5rem;
+    justify-content: space-between;
+    padding: 0.625rem 3.125rem;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+   &_active 
+   {
+    background-color: #fff;
+   }
+    &-menu {
+        width: 33.333%;
+        display: flex;
+        justify-content: flex-start;
+
+        .menulist {
+
+            &-item {
+                margin: 0.375rem 1.3125rem;
+
+                a {
+                    font-size: 1rem;
+                    text-transform: uppercase;
+                    font-family: "SemiBold";
+                    letter-spacing: 2px;
+                    color: var(--primaryText);
+                }
+                &:hover
+                {
+                    a {
+                        color: var(--primary);
+                    }
+                }
+            }
+        }
+    }
+
+    &-logo {
+        width: 33.333%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        &-text {
+            font-size: 12px;
+            text-transform: uppercase;
+            font-family: "Bold";
+            letter-spacing: 2px;
+            color: var(--primaryText);
+        }
+        img 
+        {
+            width: 70px;
+        }
+    }
+
+    &-profile {
+        width: 33.333%;
+        display: flex;
+        justify-content: flex-end;
+
+        .profilemenu {
+            &-item {
+                margin: 0.375rem 1.3125rem;
+                a {
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    font-family: "SemiBold";
+                    letter-spacing: 2px;
+                    color: var(--primaryText);
+                }
+                &:hover
+                {
+                    a {
+                        color: var(--primary);
+                    }
+                }
+            }
+        }
+    }
+}
+// Header ends
+// Home Page  
+.banner 
+{
+   
+    &-img
+    {
+        height: 800px;
+        background-image: url("../image/banner.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 0px -8px;
+        display: flex;
+        align-items: center;
+    }
+    &-content
+    {
+        padding: 6%;
+        h2 
+        {
+            font-family: "SemiBold";
+            font-size: 3rem;
+            color: var(--primaryText);
+        }
+        p 
+        {
+            font-size: 1.75rem;
+            color: var(--primaryText);
+            font-family: 'Regular';
+            span 
+            {
+                color: var(--primary);
+            }
+        }
+    }
+}
