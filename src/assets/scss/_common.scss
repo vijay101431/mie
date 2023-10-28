@@ -12,6 +12,9 @@ html
 .block
 {
     padding: 3.125rem 0rem;
+    @media screen and (max-width: 768px) {
+        padding: 1.875rem 0rem;
+    }
     &-container
     {
         max-width: 1600px;
@@ -24,11 +27,15 @@ html
         {
             color: var(--primaryText);
             text-transform: uppercase;
-            font-family: "SemiBold";
+            font-family: "Regular";
             letter-spacing: 2px;
             font-size: 1.5rem;
             text-align: center;
-            margin-bottom: 1.875rem;
+            margin-bottom: 3.125rem;
+            @media screen and (max-width: 768px) {
+                font-size: 18px;
+                margin-bottom: 1.875rem;
+            }
 
         }
     }
@@ -51,4 +58,12 @@ html
         display: block;
         
     }
+}
+
+//Responsive Design 
+
+@media screen and (max-width: 768px) {
+.main {
+    padding-top: 5rem;
+}
 }
