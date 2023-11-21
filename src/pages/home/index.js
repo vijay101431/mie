@@ -25,7 +25,7 @@ function index() {
             <h3>SHOP THE NEW DROP!</h3>
           </div>
           <div className='block-content'>
-            <Carousel show={2} slide={2} swiping={true} responsive={true} infinite={true}>
+            <Carousel show={( window.innerWidth <= 580 ? 2 : window.innerWidth <= 767 ? 3 : window.innerWidth <= 1366 ? 4 : 5)} slide={2} swiping={true} responsive={true} infinite={true}>
               <div className='productItem'>
                 <div className='productItem-wrapper'>
                   <a href='#' className='productItem-imageWrapper'>
